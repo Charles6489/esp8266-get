@@ -12,14 +12,14 @@
 #include <WiFiClient.h> 
 #include <ESP8266WebServer.h>
 #include <ESP8266HTTPClient.h>
-const char* ssid     = "Ambafiber Orozco";
-const char* password = "0939979649";
-const char* host     = "107.178.213.7";
+const char* ssid     = "wifi";
+const char* password = "clave";
+const char* host     = "107.178.213.7"; //ip del servidor
 const char* url      = "/control.php";
 int Led_OnBoard = 2;                  // Initialize the Led_OnBoard 
 
-IPAddress local_IP(192,168,1,130);
-IPAddress server(107,178,213,7);
+IPAddress local_IP(192,168,1,130); //ip para la esp
+IPAddress server(107,178,213,7); // ip del servidor
 IPAddress gateway(192,168,1,1);
 IPAddress subnet(255,255,255,0);
 IPAddress primaryDNS(8, 8, 8, 8); //optional
